@@ -105,8 +105,15 @@ void P02(int a[], int n)
             sum = sum + a[i];
         }
     }
-    average = ((float)sum/count);
-    printf("%0.2f", average);
+    if (count == 0)
+    {
+        cout << "Mang khong co so chan!";
+    } 
+    else 
+    { 
+        average = ((float)sum/count);
+        printf("%0.2f", average);
+    }
 }
 
 bool isPrime(int n)
@@ -125,78 +132,17 @@ bool isPrime(int n)
 }
 void P04(int a[], int n)
 {
+    int count = 0;
     for (int i = 0; i < n; i++)
     {
         if (isPrime(a[i]))
-        cout << a[i] << " ";
-    }
-}
-
-void swap(int &a, int &b)
-{
-    int c = a;
-    a = b;
-    b = c;
-}
-void P05(int a[], int n)
-{
-for (int i = 0; i < n - 1; i++)
-{
-    for (int j = i + 1; j < n; j++)
-    {
-        if ((a[i] > a[j]) && (a[i] % 2 == 0) && (a[j] % 2 ==0))
         {
-            swap(a[i], a[j]);
+            count++;
+            cout << a[i] << " ";
         }
     }
-}
-}
-
-bool mangtang(int a[], int n)
-{
-    for (int i = 0; i < n - 1; i++)
+    if (count == 0)
     {
-        for (int j = i + 1; j < n; j++)
-        {
-            if (a[i] > a[j])
-            {
-                return false;
-                break;
-            }
-        }
-    }
-    return true;
-}
-bool manggiam(int a[], int n)
-{
-    for (int i = 0; i < n - 1; i++)
-    {
-        for (int j = i + 1; j < n; j++)
-        {
-            if (a[i] < a[j])
-            {
-                return false;
-                break;
-            }
-        }
-    }
-    return true;
-}
-void P06(int a[], int n)
-{
-    if (manggiam(a, n) && mangtang(a,n) == false)
-    {
-        cout << "Mang giam";
-    }
-    else if (mangtang(a, n) && (manggiam(a,n) == false))
-    {
-        cout << "Mang tang";
-    }
-    else
-    {
-        cout << "Khong tang khong giam";
+        cout << "Mang khong co so nguyen to!";
     }
 }
-
-
-

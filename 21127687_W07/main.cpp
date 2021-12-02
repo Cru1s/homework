@@ -6,14 +6,16 @@
 #include <conio.h>
 #include <math.h>
 #include "array.h"
-#define MAX 100
+#define MAX 10000
 using namespace std;
 
 int main()
 {
-    int n, name;
+    int n, m, name;
     int a[MAX];
-    cout << "Nhap bai lam can kiem tra(1 - 3): ";
+    int b[MAX];
+    int c[2*MAX];
+    cout << "Nhap bai lam can kiem tra(1 - 10): ";
     cin >> name;
     switch (name)
 {   
@@ -26,16 +28,67 @@ int main()
     }
     case 2:
     {
-        cout << "            P02: " << endl;
         input(a,n);
         P02(a, n);
         break;
     }
     case 3:
     {
-        cout << "            P04: " << endl;
+        cout << "            P02: " << endl;        
         input(a, n);
         P04(a, n);
+        break;
+    }
+    case 4:
+    {
+        cout << "            P05: " << endl;
+        input(a,n);
+        P05(a, n);
+        output(a, n);
+        break;
+    }
+    case 5:
+    {
+        cout << "            P06: " << endl;
+        input(a, n);
+        P06(a, n);
+        break;
+    }
+    case 6:
+    {
+        cout << "            P09: " << endl;
+        input(a, n);
+        P09(a, n);
+        break;
+    }
+    case 7:
+    {
+        cout << "            P12: " << endl;
+        input(a, n);
+        P12(a, n);
+        break;
+    }
+    case 8:
+    {
+        cout << "            P15: " << endl;
+        input(a, n);
+        P15(a, n);
+        break;
+    }
+    case 9:
+    {
+        cout << "            P25: " << endl;
+        input(a, n);
+        input2nd(b, m);
+        P25(a, n, b, m, c);
+        break;
+    }
+    case 10:
+    {
+        cout << "            P26: " << endl;
+        input(a, n);
+        input2nd(b, m);
+        P26(a, n, b, m, c);
         break;
     }
     case 0:
@@ -44,7 +97,13 @@ int main()
         cout << "Have a nice day!" << endl;
         break;
     }
+    default:
+    {
+        cout << "So da nhap khong hop le!"; 
+        cout << "vui long nhap lai so thu tu bai tap (1 - 10)!";
+    }
 }
-    getch();
+    printf(" \n");
+    system("pause");
     return(0);
 }

@@ -1,3 +1,7 @@
+//Ho va Ten: Phan Huy Duc Tai
+//MSSV 21127687
+//Lop 21CLC07
+
 #include <iostream>
 #include <conio.h>
 #include <math.h>
@@ -9,44 +13,35 @@ int main()
 {
     int n, name;
     int a[MAX];
-    cout << "Nhap bai lam can kiem tra(1 - 10): ";
+    cout << "Nhap bai lam can kiem tra(1 - 3): ";
     cin >> name;
     switch (name)
 {   
     case 1:
     {
+        cout << "            P01: " << endl;
         input(a, n);
         P01(a, n);
         break;
     }
     case 2:
     {
+        cout << "            P02: " << endl;
         input(a,n);
         P02(a, n);
         break;
     }
     case 3:
     {
+        cout << "            P04: " << endl;
         input(a, n);
         P04(a, n);
         break;
     }
-    case 4:
+    case 0:
     {
-        input(a,n);
-        P05(a, n);
-        output(a, n);
-        break;
-    }
-    case 5:
-    {
-        input(a, n);
-        P06(a, n);
-        break;
-    }
-    case 6:
-    {
-        input(a, n);
+        cout << "Ban da thoat khoi menu!" << endl;
+        cout << "Have a nice day!" << endl;
         break;
     }
 }
