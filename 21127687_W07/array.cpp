@@ -224,7 +224,7 @@ int arraycount(int a[], int n)
 }
 void P09(int a[], int n)
 {
-    int b[n];
+    int b[MAX];
     int x = 1;
     b[0] = a[0];
     for (int i = 1; i < n; i++)
@@ -337,7 +337,7 @@ void P26(int a[], int n, int b[], int m, int c[])
         if (ifRepeat(c, h, i) == true)
         {
             int count = repeatCount(c, h, i);
-            if (count != 1)
+            if (count != 0)
             {
                 cout << c[i] << " ";
             }
