@@ -100,7 +100,7 @@ int main()
     default:
     {
         cout << "So da nhap khong hop le!"; 
-        cout << "vui long nhap lai so thu tu bai tap (1 - 10)!";
+        cout << "vui long khoi tao lai chuong trinh va nhap lai so thu tu bai tap (1 - 10)!";
     }
 }
     printf(" \n");

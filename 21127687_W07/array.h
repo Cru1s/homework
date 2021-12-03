@@ -171,3 +171,7 @@ void P26(int a[], int n, int b[], int m, int c[]);
 //Input 1: 0
 //Output 1: Ban da thoat khoi menu!
 //          Have a nice day!
+
+//Test case 12
+//Input 1: 11
+//Output: vui long khoi tao lai chuong trinh va nhap lai so thu tu bai tap (1 - 10)!
