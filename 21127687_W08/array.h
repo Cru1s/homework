@@ -57,3 +57,13 @@ bool E316(int a[MAX][MAX], int n, int m);
 //Output 3.3: Co 2 so nguyen to trong ma tran
 bool isPrime(int n);
 void E317(int a[MAX][MAX], int n, int m);
+
+//Test case 4
+//Input: 0
+//Output: Ban da thoat khoi menu!
+//        Have a nice day!
+
+//Test case 5:
+//Input 4:
+//Output: So bai da nhap khong hop le!
+//        Vui long khoi dong lai menu!
